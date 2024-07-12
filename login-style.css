@@ -20,6 +20,10 @@ body{
     border-radius: 10px;
 }
 
+.form-container:hover {
+    border: 3px solid #5bbcf0;
+}
+
 .logo{
     padding-top: 30px;
 }
@@ -48,8 +52,12 @@ body{
     height: 40px;
     margin: 5px;
     padding-left: 10px;
-    border-radius: 3px;
+    border-radius: 4px;
     border: none;
+}
+
+.email-field:hover, .password-field:hover {
+    border: 3px solid #5bbcf0;
 }
 
 .password-flex{
@@ -66,11 +74,13 @@ body{
 
 .forget-pass{
     font-family: "Nunito Sans", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
     color: #08253F;
     padding-top: 5px;
     align-self: flex-end;
     padding-right: 25px;
+
 }
 
 .btn{
@@ -146,6 +156,5 @@ body{
 
     .footer{
         font-size: 12px;
-    }
-    
+    }   
 }
