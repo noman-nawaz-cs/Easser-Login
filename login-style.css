@@ -1,5 +1,6 @@
 body{
     background-color: #d1f1fa;
+    margin: 0;
 }
 
 .container{
@@ -14,18 +15,17 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 420px;
-    height: 420px;
+    max-width: 509px;
+    width: 100%;
+    height: 534px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
-.form-container:hover {
-    border: 3px solid #5bbcf0;
-}
 
 .logo{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .text{
@@ -33,67 +33,75 @@ body{
     font-size: 24px;
     color: #08253F;
     font-weight: bold;
-    padding-top: 40px;
-    margin-bottom: 10px;
+    padding-top: 60px;
 }
 
 .login-form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 380px;
-    height: 100px;
+    justify-content: center;
+    margin-top: 21px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #08253F;
+    opacity: 0.3;
 }
 
 .email-field, .password-field{
     font-family: "Nunito Sans", sans-serif;
-    background-color: #DEDEDE;
-    width: 370px;
-    height: 40px;
-    margin: 5px;
-    padding-left: 10px;
-    border-radius: 4px;
+    font-size: 17px;
+    background-color: #F6F6F6;
+    width: 437px;
+    height: 52px;
+    padding-left: 15px;
+    border-radius: 9px;
     border: none;
 }
 
-.email-field:hover, .password-field:hover {
-    border: 3px solid #5bbcf0;
-}
-
 .password-flex{
-    display: flex;
-    align-items: center;
+    margin-top: 15px;
+    position: relative;
 }
 
 .security-logo{
-    position: relative;
-    right: 18px;
-    bottom: 36px;
+    position: absolute;
     cursor: pointer;
+    right:12px;
+    top: 12px;
 }
 
 .forget-pass{
     font-family: "Nunito Sans", sans-serif;
-    font-size: 13px;
+    font-size: 17px;
     font-weight: bold;
-    color: #08253F;
-    padding-top: 5px;
+    color: #0D3A63;
+    padding-top: 8px;
     align-self: flex-end;
-    padding-right: 25px;
-
+    text-align: end;
+    padding-right: 2px;
 }
 
 .btn{
-    width: 180px;
-    height: 40px;
+    width: 296px;
+    height: 50px;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: bold;
     color:whitesmoke;
     background-color: #0D3A63;
-    margin-top: 30px;
-    border-radius: 5px;
+    margin-top: 40px;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
+}
+
+.button-field{
+    display: flex;
+    justify-content: center;
+    width: 100%; 
 }
 
 .footer{
@@ -103,58 +111,29 @@ body{
     position: fixed;
     bottom: 16px;
     box-sizing: border-box;
-    width: 100vw;
     text-align: center;
 }
 
-@media (max-width: 480px)
+@media (max-width: 460px)
 {
-    .form-container{
-        width: 280px;
-        height: 360px;
+    .email-field, .password-field{
+        width: 94vw;
     }
+}
 
-    .logo{
-        padding-top: 20px;
+@media (max-width: 340px)
+{
+    .email-field, .password-field{
+        width: 92vw;
     }
 
     .logo img{
-        height: 60px;
-        width: 155px;
+        height: 66px;
+        width: 170px;
     }
-
-    .text{     
+    
+    .text{
         font-size: 20px;
-        padding-top: 25px;
+        padding-top: 40px;
     }
-
-    .login-form{
-        width: 250px;
-        height: 80px;
-    }
-
-    .email-field, .password-field{  
-        width: 240px;
-        height: 35px;
-    }
-
-    .security-logo{
-        bottom: 33px;
-    }
-
-    .forget-pass{
-        padding-top: 10px;
-        padding-right: 20px;
-        font-size: 12px;
-    }
-
-    .btn{
-        width: 160px;
-        height: 35px;
-        font-size: 12px;  
-    }
-
-    .footer{
-        font-size: 12px;
-    }   
 }
